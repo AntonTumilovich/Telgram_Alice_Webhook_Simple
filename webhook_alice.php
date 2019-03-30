@@ -34,9 +34,9 @@
 
 
 
-function Send_Out($out_text, $out_tts = "", $is_end = false)
+function Send_Out($user_id, $out_text, $out_tts = "", $is_end = false)
 {
-  global $data_msg_sess_id, $user_id;
+  global $data_msg_sess_id;
 
   ///// GENERATE BASE OF OUT //////
     $Data_Out = new Alice_Data_Out();
