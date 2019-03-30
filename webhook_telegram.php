@@ -26,10 +26,12 @@ $request = json_decode($request, TRUE);
 
 if (!$request)
 {
+  die();
     // Some Error output (request is not valid JSON)
 }
 else if (!isset($request['update_id']) || !isset($request['message']))
 {
+  die();
     // Some Error output (request has not message)
 }
 else
