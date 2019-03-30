@@ -45,8 +45,9 @@ else
   $msg_text = mb_strtolower($msg_text, 'UTF-8');
 
 
-
   $tokens = explode(" ", $msg_text);
+}
+
 
   /////// PARSING ///////
 
@@ -54,7 +55,6 @@ else
   $Out_Str = Parse_Tokens($tokens);
 
   Send_Out($user_id, $Out_Str);
-}
 
 
 
