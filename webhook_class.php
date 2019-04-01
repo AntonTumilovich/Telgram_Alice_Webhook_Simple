@@ -54,7 +54,7 @@ class Telegram_Cli_Class
     if (strlen($user_id) < 1 || mb_strlen($msg) < 1) {return;}
     $json = file_get_contents('https://api.telegram.org/bot' . $this->tg_token . '/sendMessage?chat_id=' . $user_id . '&text=' . $msg);
 
-////  CHECK THAT ALL OK ////
+//// TODO : CHECK THAT ALL OK ////
   }
 
 
